@@ -1,2 +1,2 @@
 # Medicalsymptiomcheker
-#This is a bsic symptom checker not a real time one. So, pleas ebe careful 
+#This is a bsic symptom checker not a real time one. So, please be careful while working on this one. Please type in your concenrs and wit for the LLM to respond with a check on this symptom 
