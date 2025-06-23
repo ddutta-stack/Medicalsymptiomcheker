@@ -1,2 +1,11 @@
 # Symtom checker for a simple medical application
 def check_symptoms(symptoms):
+    """
+    Check the provided symptoms and return a possible condition.
+    
+    Args:
+        symptoms (list): A list of symptoms provided by the user.
+        
+    Returns:
+        str: A possible condition based on the symptoms.
+    """
