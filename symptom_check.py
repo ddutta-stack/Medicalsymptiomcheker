@@ -1,4 +1,4 @@
-# Symtom checker for a simple medical application
+# Symtom checker for a simple medical application. This is a basic implementation using console input.
 def check_symptoms(symptoms):
     """
     Check the provided symptoms and return a possible condition.
