@@ -15,8 +15,15 @@ def check_symptoms(symptoms):
     """
     prompt = f'Given the symptoms: what could be a possible condition?'
     payload = {
-        "model": "llama3",
+        "model": "deepseek-r1:1.5b",
         "prompt": prompt,
-        "max_tokens": 100,
-        "temperature": 0.7
+        "stream": False,
     }
+    response = requests.post(ollamaurl, json=payload)
+    if response.status_code == 200:
+        return response.json().get('response', 'No condition found.')
+    else:
+        return f"Error: {response.status_code} - {response.text}"
+    
+    # Test the symptom checker
+if __name__ == "__main__":
