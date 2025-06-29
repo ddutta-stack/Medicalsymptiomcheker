@@ -27,5 +27,6 @@ def check_symptoms(symptoms):
     
     # Test the symptom checker
 if __name__ == "__main__":
+    test_symptoms= ("fever", "cough", "sore throat")
     print("Welcome to the Symptom Checker!")
-    print(check_symptoms)
+    print(check_symptoms(test_symptoms))
