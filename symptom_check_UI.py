@@ -26,3 +26,4 @@ interface = gr.Interface(
     inputs=gr.Textbox(lines=2,placeholder="Enter about your symptoms",label="Enter your symptoms (comma separated)"),
     outputs=gr.Textbox(label="Possible Condition"),
     title="Symptom Checker",
+    description="Enter your symptoms to get a possible condition as suggested by AI.",
