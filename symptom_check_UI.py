@@ -20,6 +20,11 @@ def check_symptoms(symptoms):
         "prompt": prompt,
         "stream": False,
     }
+    response = requests.post(ollamaurl, json=payload)
+    if response.status_code == 200:
+        return response.json().get('response', 'No condition found.')
+    else:
+        return f"Error: {response.status_code} - {response.text}"
 # create the gradio interface
 interface = gr.Interface(
     fn=check_symptoms,
