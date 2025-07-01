@@ -24,6 +24,9 @@ def check_symptoms(symptoms):
 interface = gr.Interface(
     fn=check_symptoms,
     inputs=gr.Textbox(lines=2,placeholder="Enter about your symptoms",label="Enter your symptoms (comma separated)"),
-    outputs=gr.Textbox(label="Possible Condition"),
+    outputs=gr.Textbox(lines=2,label="Possible Condition"),
     title="Symptom Checker",
-    description="Enter your symptoms to get a possible condition as suggested by AI.",
+    description="Enter your symptoms to get a possible condition as suggested by AI.")  
+# launch the interface
+if __name__ == "__main__":
+    interface.launch()
