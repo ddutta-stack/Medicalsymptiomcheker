@@ -4,4 +4,25 @@
 import gradio as gr
 import random
 ollamaurl = "http://localhost:11434/api/generate"
-
+def check_symptoms(symptoms):
+    """
+    Check the provided symptoms and return a possible condition.
+    
+    Args:
+        symptoms (list): A list of symptoms provided by the user.
+        
+    Returns:
+        str: A possible condition based on the symptoms.
+    """
+    prompt = f'Given the symptoms: what could be a possible condition?'
+    payload = {
+        "model": "deepseek-r1:1.5b",
+        "prompt": prompt,
+        "stream": False,
+    }
+# create the gradio interface
+interface = gr.Interface(
+    fn=check_symptoms,
+    inputs=gr.Textbox(lines=2,placeholder="Enter about your symptoms",label="Enter your symptoms (comma separated)"),
+    outputs=gr.Textbox(label="Possible Condition"),
+    title="Symptom Checker",
