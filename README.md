@@ -5,3 +5,4 @@ For common ailments
 Before visiting a doctor
 Offers suggestions for minor issues not treatment
 Steps to use the model:
+launch the tool and type in any symptom you might be having
