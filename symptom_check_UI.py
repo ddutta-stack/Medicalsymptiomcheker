@@ -32,6 +32,6 @@ interface = gr.Interface(
     outputs=gr.Textbox(lines=2,label="Possible Condition"),
     title="Symptom Checker",
     description="Enter your symptoms to get a possible condition as suggested by AI.")  
-# launch the interface
+# launch the interface to support user interaction using the UI
 if __name__ == "__main__":
     interface.launch()
