@@ -7,3 +7,4 @@ Offers suggestions for minor issues not treatment
 Steps to use the model:
 launch the tool and type in any symptom you might be having
 either using the console or the UI
+We can also use it to add an API endpoint and use it using a tool like Postman
